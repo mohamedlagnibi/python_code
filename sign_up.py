@@ -40,7 +40,7 @@ users = [email, password]
 
 for user in users:
     if user in new_users:
-        print(f"\nHello {username}")
+        print(f"\nHello {username.title()}")
         break
     else:
         print("You need to sign up: ")
