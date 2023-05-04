@@ -1,3 +1,5 @@
+# Simple Calculator.
+
 try:
     #Arithmetic Operation
     print("""Select a number of Operation you would to do:
@@ -8,6 +10,7 @@ try:
          5 : Exponentiation
          6 : Quit
     """)
+    
     class Number:
         def __init__(self, num1, num2):
             self.num1 = num1
@@ -44,7 +47,7 @@ try:
                 
     choice = int(input("Enter number of operation: ")) # prompts from users
     
-    if choice <= 5:
+    if 1 <= choice <= 5:
         num1 = int(input("Enter first number: "))
         num2 = int(input("Enter second number: "))
         number = Number(num1, num2)
@@ -58,3 +61,4 @@ except ValueError:
     print("Error: Please enter an intger number")
 except ZeroDivisionError:
     print("Error: you can't divide by Zero")
+    
